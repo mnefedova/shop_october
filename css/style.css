@@ -56,9 +56,17 @@
     margin: 0 0 0 31px;
 }
 
+.header__link:hover {
+    opacity: 0.5;
+}
+
 .header__menu-btn {
     border: none;
     background-color: transparent;
+}
+
+.header__menu-btn:hover {
+    opacity: 0.5;
 }
 
 .brand {
@@ -68,7 +76,7 @@
 .brand__wrp {
     background-color: var(--light-pink);
     flex-grow: 1;
-    padding: 0 0 92px;
+    padding: 0 0 0 92px;
     display: flex;
     align-items: center;
 }
@@ -79,6 +87,17 @@
     font-weight: 900;
     line-height: 58px;
     text-transform: uppercase;
+    position: relative;
+}
+
+.brand__title::before {
+    height: 92px;
+    width: 12px;
+    background-color: var(--dark-pink);
+    content: ''; 
+    position: absolute; 
+    left: -16px;  
+    top: 10px;
 }
 
 .brand__subtitle {
@@ -193,6 +212,47 @@
     margin: 0 0 30px 0;
 }
 
+.fetured-items__item:hover .fetured-items__img{
+    background-color: rgba(58, 56, 56, 0.86);
+    filter: brightness(40%) blur(1px); /* Размытие */
+}
+
+.fetured-items__item:hover .fetured-items__button {
+    display: block;
+}
+
+.fetured-items__wrp {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fetured-items__button {
+    position: absolute; 
+    height: 43px;
+    width: 138px; 
+    border: 1px solid var(--white); 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--white);  
+    background-color: transparent;  
+    display: none;   
+}
+
+.fetured-items__button::before {
+    content: '';
+    height: 24px;
+    width: 26px;
+    background-image: url(../img/cart.svg);
+    background-size: 24px 26px;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    transform: translate(0,30%);
+}
+
 .fetured-items__btn {     
     border: 1px solid #FF6A6A; 
     color: var(--dark-pink);  
@@ -201,6 +261,11 @@
     margin: 50px 0 0 0;
     text-decoration: none;
     padding: 14px 38px 14px 38px;
+}
+
+.fetured-items__btn:hover {     
+    color: var(--white); 
+    background-color: var(--dark-pink);  
 }
 
 .fetured-items__title {
@@ -260,6 +325,10 @@
     color: var(--milk-white);  
 }
 
+.benefits__img:hover {
+    opacity: 0.5;
+}
+
 /* FOOTER*/
 
 .footer__container {
@@ -281,10 +350,57 @@
     background-color: transparent;
 }
 
-.footer__form {
+.footer__form-info {
     width: 557px;
     text-align: center;
-    background-color: transparent;    
+    background-color: transparent;   
+}
+
+.footer__form {
+    margin: 32px 0 0 0;   
+  
+}
+
+.footer__form-input {
+    height: 36px;
+    width: 256px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;  
+    color: #222224;
+    background-color: #E1E1E1;
+    border: none;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    margin: 0;
+    padding-left: 22px;
+}
+
+.footer__form-btn {
+    height: 36px;
+    width: 85px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    color: var(--white);
+    background-color: #E05C6E;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px; 
+    border: none; 
+    margin: 0;
+}
+
+.footer__form-input:hover {
+    outline-color: var(--dark-pink);
+}
+
+.footer__form-input:focus {
+    outline-color: var(--dark-pink);
+}
+
+.footer__form-btn:hover {
+    opacity: 0.5;
 }
 
 .footer__desc {
@@ -325,10 +441,178 @@
     color: var(--milk-white); 
 }
 
+.footer__img{
+    fill: var(--black);
+}
+
+.footer__link:hover .footer__img{
+    fill: var(--white);
+}
+
+.footer__img-path {
+    fill: var(--white);    
+}
+
+.footer__link:hover .footer__img-path {
+    fill: var(--dark-pink);    
+}
+
 .footer__list {
     display: flex;
 }
 
 .footer__item {
     margin: 0 0 0 8px;
+}
+
+/*registration*/
+
+.registration-title {
+    background-color: #F8F3F4;
+}
+
+.registration-title__wrp {
+    display: flex;
+    align-items: center;
+    height: 148px;
+}
+
+.registration-title__desc {
+    color: var(--pink);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    text-transform: uppercase;   
+}
+
+.registration__wrp {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.registration__form {
+    width: 359px;
+    padding: 64px 0 96px 0;
+    display: flex;
+    flex-direction: column;   
+}
+
+.registration__form-text {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #B1B1B1; 
+    margin-top: 15px;   
+}
+
+.registration__form-btn {
+    height: 50px;
+    width: 167px;
+    padding-left: 29px;
+    color: var(--white);
+    background-color: var(--pink);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px; 
+    text-transform: uppercase;  
+    border: none;
+    text-align: left;
+    position: relative;
+    margin-top: 39px;
+}
+
+.registration__form-btn::after {
+    content: '';
+    height: 24px;
+    width: 26px;
+    background-image: url(../img/vector.svg);
+    background-size: 24px 26px;
+    position: absolute; 
+    top: 0;
+    right: 0;
+    transform: translate(-50%,50%);    
+}
+
+.registration__form-label {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    color: var(--black);
+    
+}
+
+.registration__form-input {
+    margin-top: 20px;
+    height: 44px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    padding-left: 16px;  
+    border: 1px solid #A4A4A4;  
+    color: #B1B1B1;
+}
+
+.registration__form-input:hover {
+    outline-color: var(--dark-pink);
+}
+
+.registration__form-input:focus {
+    outline-color: var(--dark-pink);
+}
+
+.registration__form-btn:hover {
+    opacity: 0.5;
+}
+
+.registration__form-wrp {
+    display: flex;
+    margin-top: 31px;
+    margin-bottom: 33px;
+}
+
+.registration__form-radio {
+    margin-right: 10px;
+}
+
+.registration__form-radio-lbl {
+    margin-right: 20px;
+}
+
+.registration__text {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    margin-top: 64px;
+    margin-left: 128px;
+}
+
+.registration__heading {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+}
+
+.registration__desc {
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.registration__item {
+    margin-bottom: 16px;
+    position: relative;
+    margin-left: 22px;
+}
+
+.registration__item::before {
+    content: '';
+    height: 16px;
+    width: 20px;
+    background-image: url(../img/check.svg);
+    background-size: 16px 20px;
+    position: absolute; 
+    top: 0;
+    left: 0;
+
+    transform: translate(-120%, 50%);    
 }

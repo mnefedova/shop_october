@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -63,144 +63,59 @@
         </div>
     </header>
     <main>
-        <section class="brand">
-            <img class="brand__img" src="./img/man.jpg" alt="man">
-            <div class="brand__wrp">
-                <h1 class="brand__title">the brand <span class="brand__subtitle">of luxerious <span class="brand__subtitle-pi
-                            nk"> fashion</span></span></h1>
+        <section class="registration-title">
+            <div class="container registration-title__wrp">
+                <p class="registration-title__desc">registration</p>
             </div>
         </section>
-        <section class="sales">
-            <div class="container">
-                <h2 class="sales__heading visually-hidden">Sales</h2>
-                <ul class="sales__list">
-                    <li class="sales__item sales__item-narrow sales-woman">
-                        <p class="sales__text">30% off</p>
-                        <h3 class="sales__item-title">for women</h3>
-                    </li>
-                    <li class="sales__item sales__item-narrow sales-man">
-                        <p class="sales__text">hot deal</p>
-                        <h3 class="sales__item-title">for men</h3>
-                    </li>
-                    <li class="sales__item sales__item-narrow sales-kid">
-                        <p class="sales__text">new arrivals</p>
-                        <h3 class="sales__item-title">for kids</h3>
-                    </li>
-                    <li class="sales__item sales__item-wide sales-acc">
-                        <p class="sales__text sales__text-wide">luxirous & trendy</p>
-                        <h3 class="sales__item-title">accesories</h3>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="fetured-items">
-            <div class="container">
-                <h2 class="fetured-items__heading">Fetured Items</h2>
-                <p class="fetured-items__text">Shop for items based on what we featured in this week</p>
+        <section class="registration">
+            <div class="container registration__wrp">
+                <div>
+                    <form action="#" class="registration__form">
+                        <label class="registration__form-label" for="name">Your Name</label>
+                        <input class="registration__form-input" type="text" name="first-name" id="name"
+                            placeholder="First Name">
+                        <label class="registration__form-label visually-hidden" for="last-name">Last Name</label>
+                        <input class="registration__form-input" type="text" name="last-name" id="last-name"
+                            placeholder="Last Name">
+                        <div class="registration__form-wrp">
+                            <input class="registration__form-radio" type="radio" id="Choice1" name="male" value="male">
+                            <label class="registration__form-radio-lbl" for="Choice1">Male</label>
 
-                <ul class="fetured-items__list">
-                    <li class="fetured-items__item">
-                        <div class="fetured-items__wrp">
-                            <img class="fetured-items__img" src="./img/product-1.jpg" alt="product-1">
-                            <button class="fetured-items__button" type="button">Add to Cart</button>
+                            <input class="registration__form-radio" type="radio" id="Choice2" name="male"
+                                value="female">
+                            <label class="registration__form-radio-lbl" for="Choice2">Female</label>
                         </div>
-                        <h3 class="fetured-items__title">ellery x m'o capsule</h3>
-                        <p class="fetured-items__desc">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of cool Kym Ellery
-                            teams up with Moda Operandi.</p>
-                        <p class="fetured-items__features">$52.00</p>
-                    </li>
-                    <li class="fetured-items__item">
-                        <div class="fetured-items__wrp">
-                            <img class="fetured-items__img" src="./img/product-2.jpg" alt="product-2">
-                            <button class="fetured-items__button" type="button">Add to Cart</button>
-                        </div>
-                        <h3 class="fetured-items__title">ellery x m'o capsule</h3>
-                        <p class="fetured-items__desc">known for her sculptural takes on traditional tailoring,
-                            australian
-                            arbiter of cool kym ellery
-                            teams up with moda operandi.</p>
-                        <p class="fetured-items__features">$52.00</p>
-                    </li>
-                    <li class="fetured-items__item">
-                        <div class="fetured-items__wrp">
-                            <img class="fetured-items__img" src="./img/product-3.jpg" alt="product-3">
-                            <button class="fetured-items__button" type="button">Add to Cart</button>
-                        </div>
-                        <h3 class="fetured-items__title">ellery x m'o capsule</h3>
-                        <p class="fetured-items__desc">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of cool Kym Ellery
-                            teams up with Moda Operandi.</p>
-                        <p class="fetured-items__features">$52.00</p>
-                    </li>
-                    <li class="fetured-items__item">
-                        <div class="fetured-items__wrp">
-                            <img class="fetured-items__img" src="./img/product-4.jpg" alt="product-4">
-                            <button class="fetured-items__button" type="button">Add to Cart</button>
-                        </div>
-                        <h3 class="fetured-items__title">ellery x m'o capsule</h3>
-                        <p class="fetured-items__desc">known for her sculptural takes on traditional tailoring,
-                            australian
-                            arbiter of cool kym ellery
-                            teams up with moda operandi.</p>
-                        <p class="fetured-items__features">$52.00</p>
-                    </li>
-                    <li class="fetured-items__item">
-                        <div class="fetured-items__wrp">
-                            <img class="fetured-items__img" src="./img/product-5.jpg" alt="product-5">
-                            <button class="fetured-items__button" type="button">Add to Cart</button>
-                        </div>
-                        <h3 class="fetured-items__title">ellery x m'o capsule</h3>
-                        <p class="fetured-items__desc">known for her sculptural takes on traditional tailoring,
-                            australian
-                            arbiter of cool kym ellery
-                            teams up with moda operandi.</p>
-                        <p class="fetured-items__features">$52.00</p>
-                    </li>
-                    <li class="fetured-items__item">
-                        <div class="fetured-items__wrp">
-                            <img class="fetured-items__img" src="./img/product-6.jpg" alt="product-6">
-                            <button class="fetured-items__button" type="button">Add to Cart</button>
-                        </div>
-                        <h3 class="fetured-items__title">ellery x m'o capsule</h3>
-                        <p class="fetured-items__desc">known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of cool Kym Ellery
-                            teams up with Moda Operandi.</p>
-                        <p class="fetured-items__features">$52.00</p>
-                    </li>
-                </ul>
-
-                <a class="fetured-items__btn" href="#">Browse All Product</a>
+                        <label class="registration__form-label" for="email">Login details</label>
+                        <input class="registration__form-input" type="email" name="email" id="email"
+                            placeholder="Email">
+                        <label class="registration__form-label visually-hidden" for="password">Last Name</label>
+                        <input class="registration__form-input" type="password" name="password" id="password"
+                            placeholder="Password">
+                        <p class="registration__form-text">Please use 8 or more characters, with at least 1 number and a
+                            mixture of uppercase and lowercase
+                            letters</p>
+                        <button class="registration__form-btn" type="submit">join now</button>
+                    </form>
+                </div>
+                <div class="registration__text">
+                    <h2 class="registration__heading">loyalty has its perks</h2>
+                    <p class="registration__desc">Get in on the loyalty program where you can earn points and unlock
+                        serious perks. Starting with
+                        these
+                        as
+                        soon as you join:</p>
+                    <ul class="registration__list">
+                        <li class="registration__item">15% off welcome offer </li>
+                        <li class="registration__item">Free shipping, returns and exchanges on all orders</li>
+                        <li class="registration__item">$10 off a purchase on your birthday</li>
+                        <li class="registration__item">Early access to products</li>
+                        <li class="registration__item">Exclusive offers & rewards</li>
+                    </ul>
+                </div>
             </div>
         </section>
-        <section class="benefits">
-            <ul class="benefits__list">
-                <li class="benefits__item">
-                    <img class="benefits__img" src="./img/logo-footer-1.png" alt="logo-footer-1">
-                    <h2 class="benefits__heading">Free Delivery</h2>
-                    <p class="benefits__text">Worldwide delivery on all. Authorit tively morph next-generation innov
-                        tion with extensive
-                        models.</p>
-                </li>
-                <li class="benefits__item">
-                    <img class="benefits__img" src=" ./img/logo-footer-2.png" alt="logo-footer-2">
-                    <h2 class="benefits__heading">Sales & discounts</h2>
-                    <p class="benefits__text">Worldwide delivery on all. Authorit tively morph next-generation innov
-                        tion with extensive
-                        models.</p>
-                </li>
-                <li class="benefits__item">
-                    <img class="benefits__img" src=" ./img/logo-footer-3.png" alt="logo-footer-3">
-                    <h2 class="benefits__heading">Quality assurance</h2>
-                    <p class="benefits__text">Worldwide delivery on all. Authorit tively morph next-generation innov
-                        tion with extensive
-                        models.</p>
-                </li>
-            </ul>
-        </section>
+
     </main>
     <footer class="footer">
         <section class="footer__container">
@@ -214,7 +129,7 @@
                     <h2 class="footer__heading">subscribe</h2>
                     <p class="footer__subtitle">for our newletter and promotion</p>
                     <form class="footer__form" action="#">
-                        <label class="registration__form-label visually-hidden" for="input-email">Last Name</label>
+                        <label class="footer__form-label visually-hidden" for="input-email">Last Name</label>
                         <input type="email" class="footer__form-input" id="input-email" placeholder="Enter Your Email">
                         <button type="submit" class="footer__form-btn">Subscribe</button>
                     </form>
