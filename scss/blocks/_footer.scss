@@ -1,0 +1,154 @@
+.footer {
+
+    .footer__container {
+        background: url(../img/footer-back.jpg) no-repeat;
+        background-size:cover;
+        background-color:rgba(0,0,0,.3);
+        padding: 86px 230px 126px 230px;
+    }
+
+    .footer__data {
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+
+    .footer__info {
+        width: 360px;
+        text-align: center;
+        background-color: transparent;
+    }
+
+    .footer__form-info {
+        width: 557px;
+        text-align: center;
+        background-color: transparent;   
+    }
+
+    .footer__form {
+        margin: 32px 0 0 0;   
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__form-input {
+        height: 36px;
+        width: 256px;     
+        @include font(14px, 17px, 400, $font-lato);
+        color: $light-black;
+        background-color: #E1E1E1;
+        border: none;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        margin: 0;
+        padding-left: 22px;
+        padding-right: 0;
+    }
+
+    .footer__form-btn {
+        height: 36px;
+        width: 85px;
+        @include font(14px, 17px, 400, $font-lato);
+        text-align: center;
+        color: $white;
+        background-color: #E05C6E;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px; 
+        border: none; 
+        margin: 0;
+        padding-left: 0;
+    }
+
+    .footer__form-input:hover {
+        outline-color: $dark-pink;
+    }
+
+    .footer__form-input:focus {
+        outline-color: $dark-pink;
+    }
+
+    .footer__form-input:active {
+        outline-color: $dark-pink;
+    }
+
+    .footer__form-btn:hover {
+        opacity: 0.5;
+    }
+
+    .footer__form-btn:focus {
+        color: $black;
+    }
+
+    .footer__form-btn:active {
+       color: $black;
+    }
+
+    .footer__desc {
+        @include font(20px, 24px, 400, $font-lato);
+    }
+
+    .footer__heading {
+        @include font(24px, 40px, 700, $font-lato);
+        text-transform: uppercase;
+    }
+
+    .footer__subtitle {
+        @include font(18px, 30px, 400, $font-lato);
+        text-transform: uppercase;
+    }
+
+    .footer__wrp {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        min-height: 79px;
+    }
+
+    .footer__copyright {
+        @include font(16px, 19px, 400, $font-lato);
+    }
+
+    .footer__links {
+        background-color: $black;   
+        color: $milk-white; 
+    }
+                
+    .footer__img{
+        fill: $black;
+    }
+
+    .footer__link:hover .footer__img{
+        fill: $white;
+    }
+
+    .footer__link:active .footer__img{
+        fill: $white;
+    }
+
+    .footer__link:focus .footer__img{
+        fill: $white;
+    }
+    .footer__img-path {
+        fill: $white;    
+    }
+
+    .footer__link:hover .footer__img-path {
+        fill: $dark-pink;    
+    }
+
+    .footer__link:active .footer__img-path {
+        fill: $dark-pink;    
+    }
+
+    .footer__link:focus .footer__img-path {
+        fill: $dark-pink;    
+    }
+
+    .footer__list {
+        display: flex;
+    }
+
+    .footer__item {
+        margin: 0 0 0 8px;
+    }
+}

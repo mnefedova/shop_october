@@ -1,0 +1,29 @@
+.benefits {
+    background-color: $black; 
+    padding: 104px;
+
+    .benefits__list {
+        @include flex-center;
+    }
+    
+    .benefits__item {
+        width: 360px;
+        text-align: center;
+        margin: 0 30px 0 0;
+    }
+    
+    .benefits__heading {
+        @include font(20px, 24px, 400, $font-lato);
+        color: $white; 
+        margin: 20px 0 16px 0; 
+    }
+    
+    .benefits__text {
+        @include font(14px, 17px, 300, $font-lato);
+        color: $milk-white;  
+    }
+    
+    .benefits__img:hover {
+        opacity: 0.5;
+    }    
+}
