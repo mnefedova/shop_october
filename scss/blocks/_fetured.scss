@@ -1,0 +1,96 @@
+.fetured-items {
+    padding: 96px 0 96px 0;
+    text-align: center;
+
+    .fetured-items__heading {
+        @include font(30px, 36px, 400, $font-lato);
+        margin: 0 0 6px 0;
+    }
+    
+    .fetured-items__text {
+        @include font(14px, 17px, 400, $font-lato);
+    }
+    
+    .fetured-items__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 48px 0 18px 0;
+        text-align: left;
+    }
+    
+    .fetured-items__item {
+        width: 360px;
+        margin: 0 0 30px 0;
+    }
+    
+    .fetured-items__item:hover .fetured-items__img{
+        background-color: rgba(58, 56, 56, 0.86);
+        filter: brightness(40%) blur(1px); /* Размытие */
+    }
+    
+    .fetured-items__item:hover .fetured-items__button {
+        display: block;
+    }
+    
+    .fetured-items__wrp {
+        position: relative;
+        @include flex-center;
+    }
+    
+    .fetured-items__button {
+        position: absolute; 
+        height: 43px;
+        width: 138px; 
+        border: 1px solid $white; 
+        @include font(14px, 17px, 400, $font-lato);
+        color: $white;  
+        background-color: transparent;  
+        display: none;   
+    }
+    
+    .fetured-items__button::before {
+        content: '';
+        height: 24px;
+        width: 26px;
+        background-image: url(../img/cart.svg);
+        background-size: 24px 26px;
+        position: absolute; 
+        top: 0;
+        left: 0;
+        transform: translate(0,30%);
+    }
+    
+    .fetured-items__btn {     
+        border: 1px solid $btn-pink; 
+        color: $dark-pink;  
+        text-align: center; 
+        vertical-align: middle;
+        margin: 50px 0 0 0;
+        text-decoration: none;
+        padding: 14px 38px 14px 38px;
+    }
+    
+    .fetured-items__btn:hover {     
+        color: $white; 
+        background-color: $dark-pink;  
+    }
+    
+    .fetured-items__title {
+        @include font(13px, 16px, 400, $font-lato);
+        text-transform: uppercase;  
+        margin:25px 0 0 0;   
+    }
+    
+    .fetured-items__desc {
+        @include font(14px, 17px, 300, $font-lato);
+        margin: 12px 0 18px 0;  
+    }
+    
+    .fetured-items__features { 
+        @include font(16px, 19px, 400, $font-lato);
+        color: $pink;  
+    }    
+}
+

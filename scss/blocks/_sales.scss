@@ -1,0 +1,67 @@
+.sales {
+    padding: 65px 0 0 0;
+
+    .sales__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;    
+    }
+    
+    .sales__item {
+        text-align: center;
+    }
+    
+    .sales__item:hover {
+        opacity: 0.9;
+    }
+    
+    .sales__item:active {
+        opacity: 0.9;     
+    }
+    
+    .sales__item-narrow {
+        width: 360px;
+        height: 260px;
+        margin: 0 0 30px 0;
+    }
+    
+    .sales__item-wide {
+        width: 1140px;
+        height: 180px;
+    }
+    
+    .sales__text {
+        @include font(16px, 19px, 400, $font-lato);
+        color: $white;
+        text-transform: uppercase;  
+        margin: 105px 0 0  0;  
+    }
+    
+    .sales__text-wide {
+        margin: 65px 0 0  0;    
+    }
+    
+    .sales__item-title {
+        @include font(24px, 29px, 700, $font-lato);
+        color: $dark-pink;
+        text-transform: uppercase;
+    }
+    
+    .sales-woman {
+        background-image: url(../img/sales-1.jpg);
+    }
+    
+    .sales-man {
+        background-image: url(../img/sales-2.jpg);
+    }
+    
+    .sales-kid {
+        background-image: url(../img/sales-3.jpg);
+    }
+    
+    .sales-acc {
+        background-image: url(../img/sales-4.jpg);
+    }    
+}
+

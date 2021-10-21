@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -18,49 +17,50 @@
                 <img class="header__search" src="./img/loupe.svg" alt="loupe">
             </div>
             <div class="header__wrp-controls">
-                <button class="header__menu-btn" type="button"><img src="./img/burger.svg" alt="burger"></button>
+                <button class="header__menu-btn" type="button" id="burger"><img src="./img/burger.svg"
+                        alt="burger"></button>
                 <a class="header__link" href="registration.html"><img src="./img/registration.svg"
                         alt="registration"></a>
-                <a class="header__link" href="#"><img src="./img/basket.svg" alt="basket"></a>
+                <a class="header__link" href="cart.html"><img src="./img/basket.svg" alt="basket"></a>
             </div>
-            <nav class="header__nav">
-                <h2 class="header__nav-title">
-                    menu
-                </h2>
-                <ul class="header__menu-list">
-                    <li class="header__menu-item menu-item">
-                        <h3 class="menu-item__title">man</h3>
-                        <ul class="menu-item__sub-list">
-                            <li class="menu-item__sub-item">Accessories</li>
-                            <li class="menu-item__sub-item">Bags</li>
-                            <li class="menu-item__sub-item">Denim</li>
-                            <li class="menu-item__sub-item">T-Shirts</li>
-                        </ul>
-                    </li>
-                    <li class="header__menu-item menu-item">
-                        <h3 class="menu-item__title">woman</h3>
-                        <ul class="menu-item__sub-list">
-                            <li class="menu-item__sub-item">Accessories</li>
-                            <li class="menu-item__sub-item">Jackets & Coats</li>
-                            <li class="menu-item__sub-item">Polos</li>
-                            <li class="menu-item__sub-item">T-Shirts</li>
-                            <li class="menu-item__sub-item">Shirts</li>
-                        </ul>
-                    </li>
-                    <li class="header__menu-item menu-item">
-                        <h3 class="menu-item__title">kids</h3>
-                        <ul class="menu-item__sub-list">
-                            <li class="menu-item__sub-item">Accessories</li>
-                            <li class="menu-item__sub-item">Jackets & Coats</li>
-                            <li class="menu-item__sub-item">Polos</li>
-                            <li class="menu-item__sub-item">T-Shirts</li>
-                            <li class="menu-item__sub-item">Shirts</li>
-                            <li class="menu-item__sub-item">Bags</li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
         </div>
+        <nav class="header__nav" id="menu">
+            <h2 class="header__nav-title">
+                menu
+            </h2>
+            <ul class="header__menu-list">
+                <li class="header__menu-item menu-item">
+                    <h3 class="menu-item__title">man</h3>
+                    <ul class="menu-item__sub-list">
+                        <li class="menu-item__sub-item">Accessories</li>
+                        <li class="menu-item__sub-item">Bags</li>
+                        <li class="menu-item__sub-item">Denim</li>
+                        <li class="menu-item__sub-item">T-Shirts</li>
+                    </ul>
+                </li>
+                <li class="header__menu-item menu-item">
+                    <h3 class="menu-item__title">woman</h3>
+                    <ul class="menu-item__sub-list">
+                        <li class="menu-item__sub-item">Accessories</li>
+                        <li class="menu-item__sub-item">Jackets & Coats</li>
+                        <li class="menu-item__sub-item">Polos</li>
+                        <li class="menu-item__sub-item">T-Shirts</li>
+                        <li class="menu-item__sub-item">Shirts</li>
+                    </ul>
+                </li>
+                <li class="header__menu-item menu-item">
+                    <h3 class="menu-item__title">kids</h3>
+                    <ul class="menu-item__sub-list">
+                        <li class="menu-item__sub-item">Accessories</li>
+                        <li class="menu-item__sub-item">Jackets & Coats</li>
+                        <li class="menu-item__sub-item">Polos</li>
+                        <li class="menu-item__sub-item">T-Shirts</li>
+                        <li class="menu-item__sub-item">Shirts</li>
+                        <li class="menu-item__sub-item">Bags</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="brand">
@@ -289,6 +289,7 @@
             </div>
         </section>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

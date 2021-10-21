@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -65,55 +65,37 @@
     <main>
         <section class="registration-title">
             <div class="container registration-title__wrp">
-                <h1 class="registration-title__desc">registration</h1>
+                <h1 class="registration-title__desc">shopping cart</h1>
             </div>
         </section>
-        <section class="registration">
-            <div class="container registration__wrp">
-                <div>
-                    <form action="#" class="registration__form">
-                        <label class="registration__form-label" for="name">Your Name</label>
-                        <input class="registration__form-input" type="text" name="first-name" id="name"
-                            placeholder="First Name">
-                        <label class="registration__form-label visually-hidden" for="last-name">Last Name</label>
-                        <input class="registration__form-input" type="text" name="last-name" id="last-name"
-                            placeholder="Last Name">
-                        <div class="registration__form-wrp">
-                            <input class="registration__form-radio" type="radio" id="Choice1" name="male" value="male">
-                            <label class="registration__form-radio-lbl" for="Choice1">Male</label>
 
-                            <input class="registration__form-radio" type="radio" id="Choice2" name="male"
-                                value="female">
-                            <label class="registration__form-radio-lbl" for="Choice2">Female</label>
-                        </div>
-                        <label class="registration__form-label" for="email">Login details</label>
-                        <input class="registration__form-input" type="email" name="email" id="email"
-                            placeholder="Email">
-                        <label class="registration__form-label visually-hidden" for="password">Last Name</label>
-                        <input class="registration__form-input" type="password" name="password" id="password"
-                            placeholder="Password">
-                        <p class="registration__form-text">Please use 8 or more characters, with at least 1 number and a
-                            mixture of uppercase and lowercase
-                            letters</p>
-                        <button class="registration__form-btn" type="submit">join now</button>
-                    </form>
-                </div>
-                <div class="registration__text">
-                    <h2 class="registration__heading">loyalty has its perks</h2>
-                    <p class="registration__desc">Get in on the loyalty program where you can earn points and unlock
-                        serious perks. Starting with
-                        these
-                        as
-                        soon as you join:</p>
-                    <ul class="registration__list">
-                        <li class="registration__item">15% off welcome offer </li>
-                        <li class="registration__item">Free shipping, returns and exchanges on all orders</li>
-                        <li class="registration__item">$10 off a purchase on your birthday</li>
-                        <li class="registration__item">Early access to products</li>
-                        <li class="registration__item">Exclusive offers & rewards</li>
-                    </ul>
-                </div>
-            </div>
+        <section>
+            <ul>
+                <li>
+                    <img src="./img/product-3.jpg" alt="product-3">
+                    <h2>MANGO PEOPLE T-SHIRT</h2>
+                    <p>Price: $300</p>
+                    <p>Color: Red</p>
+                    <p>Size: Xl </p>
+                    <p>Quantity:</p>
+                </li>
+                <li>
+                    <img src="./img/product-4.jpg" alt="product-4">
+                    <h2>MANGO PEOPLE T-SHIRT</h2>
+                    <p>Price: $300</p>
+                    <p>Color: Red</p>
+                    <p>Size: Xl </p>
+                    <p>Quantity:</p>
+                </li>
+            </ul>
+            <button type="button">clear shopping cart</button>
+            <a href="#">continue shopping</a>
+
+            <h2>shipping adress</h2>
+            <input type="text" placeholder="Bangladesh">
+            <input type="text" placeholder="State">
+            <input type="text" placeholder="Postcode / Zip">
+            <button type="submit">get a quote</button>
         </section>
 
     </main>
