@@ -69,33 +69,59 @@
             </div>
         </section>
 
-        <section>
-            <ul>
-                <li>
-                    <img src="./img/product-3.jpg" alt="product-3">
-                    <h2>MANGO PEOPLE T-SHIRT</h2>
-                    <p>Price: $300</p>
-                    <p>Color: Red</p>
-                    <p>Size: Xl </p>
-                    <p>Quantity:</p>
-                </li>
-                <li>
-                    <img src="./img/product-4.jpg" alt="product-4">
-                    <h2>MANGO PEOPLE T-SHIRT</h2>
-                    <p>Price: $300</p>
-                    <p>Color: Red</p>
-                    <p>Size: Xl </p>
-                    <p>Quantity:</p>
-                </li>
-            </ul>
-            <button type="button">clear shopping cart</button>
-            <a href="#">continue shopping</a>
+        <section class="order">
+            <div class="container order__wrp">
+                <div>
+                    <ul class="order_list">
+                        <li class="order_item">
+                            <div>
+                                <img class="order_img" src="./img/product-3-small.jpg" alt="product-3">
+                            </div>
+                            <div class="order_info">
+                                <h2 class="order_header">mango people t-shirt</h2>
+                                <p class="order_desc">Price: <span class="order_desc-colored">$300</span></p>
+                                <p class="order_desc">Color: Red</p>
+                                <p class="order_desc">Size: Xl </p>
+                                <p class="order_desc">Quantity:</p>
+                            </div>
+                        </li>
+                        <li class="order_item">
+                            <div>
+                                <img class="order_img" src="./img/product-7-small.jpg" alt="product-4">
+                            </div>
+                            <div class="order_info">
+                                <h2 class="order_header">mango people t-shirt</h2>
+                                <p class="order_desc">Price: <span class="order_desc-colored">$300</span></p>
+                                <p class="order_desc">Color: Red</p>
+                                <p class="order_desc">Size: Xl </p>
+                                <p class="order_desc">Quantity:</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="order_buttons">
+                        <button class="order_btn" type="button">clear shopping cart</button>
+                        <a class="order_link" href="#">continue shopping</a>
+                    </div>
+                </div>
+                <div class="order_form">
+                    <div class="order_form-inputs">
+                        <label class="order_label" for="input-address">shipping adress</label>
+                        <input class="order_input" type="text" id="input-address" placeholder="Bangladesh">
+                        <label class="order_label visually-hidden" for="input-state">state</label>
+                        <input class="order_input" type="text" id="input-state" placeholder="State">
+                        <label class="order_label visually-hidden" for="input-postcode">postcode</label>
+                        <input class="order_input" type="text" id="input-postcode" placeholder="Postcode / Zip">
+                        <button class="order_btn-quote" type="submit">get a quote</button>
+                    </div>
+                    <div class="order_total">
+                        <p class="order_text-total">sub total $900</p>
+                        <p class="order_desc-total">grand total <span class="order_desc-colored">$900</span></p>
+                        <div class="order_line"></div>
+                        <a class="order_link-total" href="#">proceed to checkout</a>
+                    </div>
+                </div>
 
-            <h2>shipping adress</h2>
-            <input type="text" placeholder="Bangladesh">
-            <input type="text" placeholder="State">
-            <input type="text" placeholder="Postcode / Zip">
-            <button type="submit">get a quote</button>
+            </div>
         </section>
 
     </main>

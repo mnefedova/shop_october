@@ -7,27 +7,61 @@
         padding: 0 0 0 92px;
         display: flex;
         align-items: center;
+
+        @include tablet {
+            min-height: 363px; 
+            padding: 0 0 0 68px;  
+        }
+
+        @include mobile {
+            min-height: 363px; 
+            padding: 0 0 0 83px;    
+        }
+    }
+
+    .brand__img {
+        width: 50%;
+
+        @include tablet {
+            height: auto;
+        }
+
+        @include mobile {
+            display: none;
+        }       
     }
     
     .brand__title {
         @include font(48px, 58px, 900, $font-lato);
         text-transform: uppercase;
         position: relative;
-    }
     
-    .brand__title::before {
-        height: 92px;
-        width: 12px;
-        background-color: $dark-pink;
-        content: ''; 
-        position: absolute; 
-        left: -16px;  
-        top: 10px;
+        &::before {
+            height: 100%;
+            width: 12px;
+            background-color: $dark-pink;
+            content: ''; 
+            position: absolute; 
+            left: -16px;  
+            top: 10px;
+        }
+
+        @include tablet {
+            @include font(44px, 52px, 900);       
+        } 
+
+        @include mobile {
+            @include font(38px, 46px, 900);       
+        }        
     }
-    
+ 
     .brand__subtitle {
         display: flex;
         @include font(37px, 44px, 700, $font-lato);
+
+        @include tablet {
+            @include font(29px, 24px, 700);
+        }
     }
     
     .brand__subtitle-pink {

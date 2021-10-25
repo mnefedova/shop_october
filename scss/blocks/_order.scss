@@ -1,0 +1,214 @@
+.order {
+
+    padding-top: 96px;
+    padding-bottom: 128px;
+
+    @include tablet {
+        padding-top: 59px;
+        padding-bottom: 147px;       
+    }
+
+    @include mobile {
+        padding-top: 39px;
+        padding-bottom: 96px;       
+    }
+
+    .order__wrp {
+        display: flex;
+        justify-content: space-between;
+        
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .order_item {
+        display: flex; 
+        box-shadow: 10px 5px 10px rgba(0,0,0,0.5);  
+        margin-bottom: 40px;
+    }
+
+    .order_img {
+          
+    }
+
+    .order_info {
+        padding-right: 90px;
+        padding-top: 22px;
+        padding-left: 31px;
+    }
+
+    .order_header {
+        @include font(24px, 29px, 400, $font-lato);
+        text-transform: uppercase;
+        margin-bottom: 42px;
+    }
+
+    .order_desc {
+        @include font(22px, 26px, 400, $font-lato);  
+        color: #575757;     
+    }
+
+    .order_desc-colored {
+        color: $pink;    
+    }
+
+    .order_form {
+        margin-left: 128px; 
+        display: flex;
+        flex-direction: column; 
+        
+        @include tablet {
+            margin-left: 0px; 
+            margin-top: 65px;
+            flex-direction: row;   
+        }
+
+        @include mobile {
+            margin-top: 50px; 
+            flex-direction: column;  
+        }        
+    }
+
+    .order_form-inputs {
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .order_buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 72px; 
+
+        @include tablet {
+            justify-content: space-around;   
+        }
+    }
+
+    .order_btn {
+        height: 49px;
+        width: 234px;
+        text-transform: uppercase;
+        border: 1px solid #A4A4A4;
+        background-color: $white;
+        @include font(14px, 17px, 300, $font-lato);
+        color: #000000; 
+    }
+
+    .order_btn:hover {
+        opacity: 0.5;
+    }
+
+    .order_link {
+        height: 49px;
+        width: 234px;
+        text-transform: uppercase;
+        border: 1px solid #A4A4A4;
+        background-color: $white;
+        text-align: center;
+        text-decoration: none; 
+        vertical-align: center; 
+        padding-top: 15px;
+        box-sizing: border-box;
+        @include font(14px, 17px, 300, $font-lato); 
+        color: #000000;           
+    }
+
+    .order_link:hover {
+        opacity: 0.5;
+    }
+
+    .order_label {
+        @include font(16px, 19px, 300, $font-lato);
+        text-transform: uppercase; 
+        color: $black;  
+    }
+
+    .order_input {
+        margin-top: 20px; 
+        height: 45px;  
+        width: 360px; 
+        padding-left: 16px;
+    }
+
+    .order_input:hover {
+        outline-color: $dark-pink;
+    }
+
+    .order_input:focus {
+        outline-color: $dark-pink;
+    }
+
+    .order_btn-quote {
+        margin-top: 24px;   
+        width: 100px;
+        height: 34px;
+        text-transform: uppercase;
+        color: $dark-grey;
+        background-color: $white;
+        border: 1px solid $dark-grey;
+        @include font(11px, 13px, 300, $font-lato);
+    }
+
+    .order_btn-quote:hover {
+        opacity: 0.5;
+    }
+
+    .order_total {
+        margin-top: 57px;
+        background: #F5F3F3;
+        padding-top: 39px;
+
+        padding-bottom: 42px;
+        display: flex;
+        align-items:flex-end;
+        flex-direction: column;
+
+        @include tablet {
+            margin-top: 20px;
+        }
+
+        @include mobile {
+            margin-top: 57px;    
+        }
+    }
+
+    .order_text-total {
+        @include font(11px, 13px, 400, $font-lato);
+        text-transform: uppercase;
+        margin-right: 34px;       
+    }
+
+    .order_desc-total {
+        @include font(16px, 19px, 300, $font-lato);
+        text-transform: uppercase;
+        margin-top: 12px;
+        margin-bottom: 39px; 
+        margin-right: 34px;                   
+    }
+
+    .order_link-total {
+        height: 50px;
+        width: 273px;
+        text-transform: uppercase;  
+        border: none;
+        background-color: $pink;
+        color: $white;
+        text-align: center;
+        text-decoration: none; 
+        padding-top: 15px;
+        box-sizing: border-box;           
+        @include font(16px, 19px, 300, $font-lato);
+        align-self: center;
+    }
+
+    .order_link-total:hover {
+        opacity: 0.5;
+    }
+
+/*    .order_line {
+        border: 1px solid #000;  
+        margin-bottom: 17px;  
+    }*/
+}
