@@ -2,27 +2,55 @@
 
     .footer__container {
         background: url(../img/footer-back.jpg) no-repeat;
-        background-size:cover;
+        background-size: cover;
         background-color:rgba(0,0,0,.3);
-        padding: 86px 230px 126px 230px;
+        min-height: 448px;
+
+        padding: 86px 0 0 0;
+        box-sizing: border-box;
+
+        @include tablet {
+            min-height: 614px;          
+        }
+
+        @include mobile {
+            min-height: 550px;          
+        }        
     }
 
     .footer__data {
+        height: 100%;
         display: flex;
         justify-content:space-around;
         align-items: center;
+
+        @include tablet {
+            flex-direction: column;          
+        }
+
+        @include mobile {
+         
+        }            
     }
 
     .footer__info {
-        width: 360px;
+        max-width: 360px;
         text-align: center;
         background-color: transparent;
     }
 
     .footer__form-info {
-        width: 557px;
+        max-width: 557px;
         text-align: center;
-        background-color: transparent;   
+        background-color: transparent;  
+        
+        @include tablet {
+            margin-top: 48px;         
+        }   
+
+        @include mobile {
+            margin-top: 59px;
+        }                
     }
 
     .footer__form {
@@ -32,7 +60,7 @@
     }
 
     .footer__form-input {
-        height: 36px;
+        height: 49px;
         width: 256px;     
         @include font(14px, 17px, 400, $font-lato);
         color: $light-black;
@@ -46,7 +74,7 @@
     }
 
     .footer__form-btn {
-        height: 36px;
+        height: 49px;
         width: 85px;
         @include font(14px, 17px, 400, $font-lato);
         text-align: center;
@@ -102,6 +130,10 @@
         justify-content:space-between;
         align-items: center;
         min-height: 79px;
+
+        @include mobile {
+            flex-direction: column-reverse;
+        }
     }
 
     .footer__copyright {
@@ -110,7 +142,11 @@
 
     .footer__links {
         background-color: $black;   
-        color: $milk-white; 
+        color: $milk-white;
+
+        @include mobile {
+            padding-top: 50px;
+        }    
     }
                 
     .footer__img{

@@ -2,6 +2,10 @@
     padding: 96px 0 96px 0;
     text-align: center;
 
+    @include tablet-mid {
+        padding: 155px 0 65px 0;        
+    }
+
     .fetured-items__heading {
         @include font(30px, 36px, 400, $font-lato);
         margin: 0 0 6px 0;
@@ -18,11 +22,23 @@
         align-items: center;
         margin: 48px 0 18px 0;
         text-align: left;
+
+        @include tablet-mid {
+            justify-content: space-around;    
+        }
+
+        @include mobile {
+            justify-content: space-between;    
+        }        
     }
     
     .fetured-items__item {
         width: 360px;
         margin: 0 0 30px 0;
+
+        @include mobile {
+            width: 100%;    
+        }
     }
     
     .fetured-items__item:hover .fetured-items__img{

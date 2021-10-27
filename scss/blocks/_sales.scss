@@ -9,7 +9,23 @@
     }
     
     .sales__item {
-        text-align: center;
+        min-height: 260px;
+        width: 31%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include tablet {
+            min-height: 168px;
+        }
+
+        @include mobile {
+            width: 100%;
+            min-height: 247px
+        }
+
     }
     
     .sales__item:hover {
@@ -21,21 +37,27 @@
     }
     
     .sales__item-narrow {
-        width: 360px;
-        height: 260px;
         margin: 0 0 30px 0;
     }
     
     .sales__item-wide {
-        width: 1140px;
-        height: 180px;
+        width: 100%;
+        min-height: 180px;
+        background-size: cover;
+
+        @include tablet {
+            min-height: 116px;
+        }
+
+        @include mobile {
+            min-height: 111px;     
+        }        
     }
     
     .sales__text {
         @include font(16px, 19px, 400, $font-lato);
         color: $white;
-        text-transform: uppercase;  
-        margin: 105px 0 0  0;  
+        text-transform: uppercase;    
     }
     
     .sales__text-wide {

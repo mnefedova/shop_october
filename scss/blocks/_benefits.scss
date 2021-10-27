@@ -2,14 +2,30 @@
     background-color: $black; 
     padding: 104px;
 
+    @include tablet {
+        padding: 0 0 64px 0;
+    }
+
+    @include mobile {
+        padding: 0 0 81px 0;
+    }
+
     .benefits__list {
         @include flex-center;
+
+        @include tablet {
+            flex-direction: column;
+        }
     }
     
     .benefits__item {
-        width: 360px;
+        max-width: 360px;
         text-align: center;
         margin: 0 30px 0 0;
+
+        @include tablet {
+            margin: 48px 0 0 0;
+        }
     }
     
     .benefits__heading {

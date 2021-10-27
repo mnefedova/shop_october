@@ -23,3 +23,15 @@
     clip-path: inset(50%);
     margin: -1px;
   }
+
+  @media (max-width: $tablet-width) { 
+    .container {
+        width: 96%;
+    }
+  }
+  
+  @media (max-width: $mobile-width) { 
+    .container {
+        width: 91%;
+    }
+  }
