@@ -1,5 +1,9 @@
 .brand {
-    display: flex;
+
+    .brand__wrapper {
+        display: flex;
+        position: relative;
+    }
 
     .brand__wrp {
         background-color: $light-pink;
@@ -29,6 +33,19 @@
         @include mobile {
             display: none;
         }       
+    }
+
+    .brand__overlay {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        z-index: 1;
+        display: none;
+    }
+   
+    .br-display-block {
+        display: block;
     }
     
     .brand__title {

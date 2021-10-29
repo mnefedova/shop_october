@@ -53,7 +53,7 @@ table {
 }
 
 .page {
-  font-family: "Lato";
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -89,6 +89,76 @@ table {
   .container {
     width: 91%;
   }
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 100;
+  font-style: normal;
+  src: url("../fonts/lato-thin-webfont.woff2") format("woff2"), url("../fonts/lato-thin-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 100;
+  font-style: italic;
+  src: url("../fonts/lato-thinitalic-webfont.woff2") format("woff2"), url("../fonts/lato-thinitalic-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/lato-light-webfont.woff2") format("woff2"), url("../fonts/lato-light-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 300;
+  font-style: italic;
+  src: url("../fonts/lato-lightitalic-webfont.woff2") format("woff2"), url("../fonts/lato-lightitalic-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/lato-regular-webfont.woff2") format("woff2"), url("../fonts/lato-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: italic;
+  src: url("../fonts/lato-italic-webfont.woff2") format("woff2"), url("../fonts/lato-italic-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/lato-bold-webfont.woff2") format("woff2"), url("../fonts/lato-bold-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  font-style: italic;
+  src: url("../fonts/lato-bolditalic-webfont.woff2") format("woff2"), url("../fonts/lato-bolditalic-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/lato-black-webfont.woff2") format("woff2"), url("../fonts/lato-black-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 900;
+  font-style: italic;
+  src: url("../fonts/lato-blackitalic-webfont.woff2") format("woff2"), url("../fonts/lato-blackitalic-webfont.woff") format("woff");
 }
 
 .header {
@@ -147,6 +217,7 @@ table {
   width: 232px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 100;
 }
 
 .header .display-block {
@@ -157,7 +228,7 @@ table {
   font-size: 14px;
   line-height: 17px;
   font-weight: 700;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   text-transform: uppercase;
   margin-bottom: 24px;
 }
@@ -172,7 +243,7 @@ table {
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   color: #F16D7F;
   text-transform: uppercase;
   margin-bottom: 12px;
@@ -182,7 +253,7 @@ table {
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   color: #6F6E6E;
   margin-bottom: 20px;
   margin-left: 21px;
@@ -192,10 +263,17 @@ table {
   margin-bottom: 11px;
 }
 
-.brand {
+.menu-item__sub-item:hover,
+.menu-item__sub-item:active,
+.menu-item__sub-item:focus {
+  font-weight: bold;
+}
+
+.brand .brand__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .brand .brand__wrp {
@@ -242,11 +320,24 @@ table {
   }
 }
 
+.brand .brand__overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
+.brand .br-display-block {
+  display: block;
+}
+
 .brand .brand__title {
   font-size: 48px;
   line-height: 58px;
   font-weight: 900;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   text-transform: uppercase;
   position: relative;
 }
@@ -286,7 +377,7 @@ table {
   font-size: 37px;
   line-height: 44px;
   font-weight: 700;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
 }
 
 @media (max-width: 1599px) {
@@ -387,7 +478,7 @@ table {
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   color: #FFFFFF;
   text-transform: uppercase;
 }
@@ -400,7 +491,7 @@ table {
   font-size: 24px;
   line-height: 29px;
   font-weight: 700;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   color: #F26376;
   text-transform: uppercase;
 }
@@ -436,7 +527,7 @@ table {
   font-size: 30px;
   line-height: 36px;
   font-weight: 400;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   margin: 0 0 6px 0;
 }
 
@@ -444,7 +535,7 @@ table {
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
 }
 
 .fetured-items .fetured-items__list {
@@ -500,6 +591,12 @@ table {
   display: block;
 }
 
+.fetured-items .fetured-items__button:hover,
+.fetured-items .fetured-items__button:active,
+.fetured-items .fetured-items__button:focus {
+  font-weight: bold;
+}
+
 .fetured-items .fetured-items__wrp {
   position: relative;
   display: -webkit-box;
@@ -521,7 +618,7 @@ table {
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   color: #FFFFFF;
   background-color: transparent;
   display: none;
@@ -550,7 +647,9 @@ table {
   padding: 14px 38px 14px 38px;
 }
 
-.fetured-items .fetured-items__btn:hover {
+.fetured-items .fetured-items__btn:hover,
+.fetured-items .fetured-items__btn:active,
+.fetured-items .fetured-items__btn:focus {
   color: #FFFFFF;
   background-color: #F26376;
 }
@@ -559,7 +658,7 @@ table {
   font-size: 13px;
   line-height: 16px;
   font-weight: 400;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   text-transform: uppercase;
   margin: 25px 0 0 0;
 }
@@ -568,7 +667,7 @@ table {
   font-size: 14px;
   line-height: 17px;
   font-weight: 300;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   margin: 12px 0 18px 0;
 }
 
@@ -576,7 +675,7 @@ table {
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   color: #F16D7F;
 }
 
@@ -634,7 +733,7 @@ table {
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   color: #FFFFFF;
   margin: 20px 0 16px 0;
 }
@@ -643,7 +742,7 @@ table {
   font-size: 14px;
   line-height: 17px;
   font-weight: 300;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   color: #FBFBFB;
 }
 
@@ -662,6 +761,9 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 148px;
 }
 
@@ -670,7 +772,7 @@ table {
   font-size: 24px;
   line-height: 29px;
   font-weight: 400;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   text-transform: uppercase;
 }
 
@@ -724,7 +826,7 @@ table {
   font-size: 13px;
   line-height: 16px;
   font-weight: 300;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   color: #B1B1B1;
   margin-top: 15px;
 }
@@ -738,7 +840,7 @@ table {
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   text-transform: uppercase;
   border: none;
   text-align: left;
@@ -763,7 +865,7 @@ table {
   font-size: 16px;
   line-height: 19px;
   font-weight: 300;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   color: #222222;
 }
 
@@ -773,21 +875,20 @@ table {
   font-size: 13px;
   line-height: 16px;
   font-weight: 300;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   padding-left: 16px;
   border: 1px solid #A4A4A4;
   color: #B1B1B1;
 }
 
-.registration .registration__form-input:hover {
-  outline-color: #F26376;
-}
-
+.registration .registration__form-input:hover,
 .registration .registration__form-input:focus {
   outline-color: #F26376;
 }
 
-.registration .registration__form-btn:hover {
+.registration .registration__form-btn:hover,
+.registration .registration__form-btn:focus,
+.registration .registration__form-btn:active {
   opacity: 0.5;
 }
 
@@ -811,7 +912,7 @@ table {
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   margin-top: 64px;
   margin-left: 128px;
 }
@@ -836,7 +937,7 @@ table {
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
 }
 
 .registration .registration__desc {
@@ -946,7 +1047,7 @@ table {
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   color: #222224;
   background-color: #E1E1E1;
   border: none;
@@ -963,7 +1064,7 @@ table {
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   text-align: center;
   color: #FFFFFF;
   background-color: #E05C6E;
@@ -974,14 +1075,8 @@ table {
   padding-left: 0;
 }
 
-.footer .footer__form-input:hover {
-  outline-color: #F26376;
-}
-
-.footer .footer__form-input:focus {
-  outline-color: #F26376;
-}
-
+.footer .footer__form-input:hover,
+.footer .footer__form-input:focus,
 .footer .footer__form-input:active {
   outline-color: #F26376;
 }
@@ -990,10 +1085,7 @@ table {
   opacity: 0.5;
 }
 
-.footer .footer__form-btn:focus {
-  color: #222222;
-}
-
+.footer .footer__form-btn:focus,
 .footer .footer__form-btn:active {
   color: #222222;
 }
@@ -1002,14 +1094,14 @@ table {
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
 }
 
 .footer .footer__heading {
   font-size: 24px;
   line-height: 40px;
   font-weight: 700;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   text-transform: uppercase;
 }
 
@@ -1017,7 +1109,7 @@ table {
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   text-transform: uppercase;
 }
 
@@ -1047,7 +1139,7 @@ table {
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
 }
 
 .footer .footer__links {
@@ -1106,10 +1198,6 @@ table {
 .order {
   padding-top: 96px;
   padding-bottom: 128px;
-  /*    .order_line {
-        border: 1px solid #000;  
-        margin-bottom: 17px;  
-    }*/
 }
 
 @media (max-width: 1599px) {
@@ -1144,6 +1232,9 @@ table {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1156,31 +1247,158 @@ table {
   margin-bottom: 40px;
 }
 
+.order .order_img {
+  width: 100%;
+}
+
+.order .order_img-wrp {
+  max-width: 262px;
+  -webkit-box-flex: 0.5;
+      -ms-flex-positive: 0.5;
+          flex-grow: 0.5;
+  width: 30%;
+}
+
 .order .order_info {
-  padding-right: 90px;
   padding-top: 22px;
   padding-left: 31px;
+  max-width: 262px;
+}
+
+@media (max-width: 767px) {
+  .order .order_info {
+    padding-top: 13px;
+    padding-left: 17px;
+    max-width: 144px;
+  }
 }
 
 .order .order_header {
   font-size: 24px;
   line-height: 29px;
   font-weight: 400;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   text-transform: uppercase;
   margin-bottom: 42px;
+}
+
+@media (max-width: 767px) {
+  .order .order_header {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    font-style: "Lato", "Arial", sans-serif;
+    margin-bottom: 25px;
+  }
 }
 
 .order .order_desc {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   color: #575757;
+}
+
+@media (max-width: 767px) {
+  .order .order_desc {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    font-style: "Lato", "Arial", sans-serif;
+  }
 }
 
 .order .order_desc-colored {
   color: #F16D7F;
+}
+
+.order .order_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 72px;
+}
+
+@media (max-width: 1599px) {
+  .order .order_buttons {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 767px) {
+  .order .order_buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.order .order_link {
+  height: 49px;
+  max-width: 234px;
+  text-transform: uppercase;
+  border: 1px solid #A4A4A4;
+  background-color: #FFFFFF;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: center;
+  padding-top: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: "Lato", "Arial", sans-serif;
+  color: #000000;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+@media (max-width: 767px) {
+  .order .order_link {
+    max-width: 174px;
+  }
+}
+
+.order .order_link:hover,
+.order .order_link:focus,
+.order .order_link:active {
+  opacity: 0.5;
+}
+
+.order .order_btn {
+  height: 49px;
+  max-width: 234px;
+  text-transform: uppercase;
+  border: 1px solid #A4A4A4;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: "Lato", "Arial", sans-serif;
+  color: #000000;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .order .order_btn {
+    max-width: 174px;
+  }
+}
+
+.order .order_btn:hover,
+.order .order_btn:focus,
+.order .order_btn:active {
+  opacity: 0.5;
 }
 
 .order .order_form {
@@ -1202,11 +1420,16 @@ table {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 @media (max-width: 767px) {
   .order .order_form {
+    margin-left: 0px;
     margin-top: 50px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1225,68 +1448,19 @@ table {
           flex-direction: column;
 }
 
-.order .order_buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 72px;
-}
-
 @media (max-width: 1599px) {
-  .order .order_buttons {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+  .order .order_form-inputs {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
-}
-
-.order .order_btn {
-  height: 49px;
-  width: 234px;
-  text-transform: uppercase;
-  border: 1px solid #A4A4A4;
-  background-color: #FFFFFF;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 300;
-  font-style: "Lato";
-  color: #000000;
-}
-
-.order .order_btn:hover {
-  opacity: 0.5;
-}
-
-.order .order_link {
-  height: 49px;
-  width: 234px;
-  text-transform: uppercase;
-  border: 1px solid #A4A4A4;
-  background-color: #FFFFFF;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: center;
-  padding-top: 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 14px;
-  line-height: 17px;
-  font-weight: 300;
-  font-style: "Lato";
-  color: #000000;
-}
-
-.order .order_link:hover {
-  opacity: 0.5;
 }
 
 .order .order_label {
   font-size: 16px;
   line-height: 19px;
   font-weight: 300;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   text-transform: uppercase;
   color: #222222;
 }
@@ -1298,10 +1472,19 @@ table {
   padding-left: 16px;
 }
 
-.order .order_input:hover {
-  outline-color: #F26376;
+@media (max-width: 1599px) {
+  .order .order_input {
+    max-width: 360px;
+  }
 }
 
+@media (max-width: 767px) {
+  .order .order_input {
+    width: 91%;
+  }
+}
+
+.order .order_input:hover,
 .order .order_input:focus {
   outline-color: #F26376;
 }
@@ -1317,10 +1500,12 @@ table {
   font-size: 11px;
   line-height: 13px;
   font-weight: 300;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
 }
 
-.order .order_btn-quote:hover {
+.order .order_btn-quote:hover,
+.order .order_btn-quote:focus,
+.order .order_btn-quote:active {
   opacity: 0.5;
 }
 
@@ -1339,25 +1524,43 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 @media (max-width: 1599px) {
   .order .order_total {
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-left: 15px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 
 @media (max-width: 767px) {
   .order .order_total {
     margin-top: 57px;
+    margin-left: 0px;
   }
+}
+
+.order .order_total::before {
+  height: 1px;
+  width: 275px;
+  background-color: #E2E2E2;
+  content: '';
+  position: absolute;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  top: 104px;
 }
 
 .order .order_text-total {
   font-size: 11px;
   line-height: 13px;
   font-weight: 400;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   text-transform: uppercase;
   margin-right: 34px;
 }
@@ -1366,7 +1569,7 @@ table {
   font-size: 16px;
   line-height: 19px;
   font-weight: 300;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   text-transform: uppercase;
   margin-top: 12px;
   margin-bottom: 39px;
@@ -1388,13 +1591,27 @@ table {
   font-size: 16px;
   line-height: 19px;
   font-weight: 300;
-  font-style: "Lato";
+  font-style: "Lato", "Arial", sans-serif;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-.order .order_link-total:hover {
+.order .order_link-total:hover,
+.order .order_link-total:focus,
+.order .order_link-total:active {
   opacity: 0.5;
+}
+
+.product__info {
+  height: 600px;
+  border: 1px solid #6F6E6E;
+  z-index: 100;
+  margin: 0 auto;
+  margin-top: -60px;
+  margin-bottom: 129px;
+  position: relative;
+  border: 1px solid #EAEAEA;
+  background-color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */

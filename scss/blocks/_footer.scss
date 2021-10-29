@@ -87,14 +87,8 @@
         padding-left: 0;
     }
 
-    .footer__form-input:hover {
-        outline-color: $dark-pink;
-    }
-
-    .footer__form-input:focus {
-        outline-color: $dark-pink;
-    }
-
+    .footer__form-input:hover,
+    .footer__form-input:focus,
     .footer__form-input:active {
         outline-color: $dark-pink;
     }
@@ -103,12 +97,9 @@
         opacity: 0.5;
     }
 
-    .footer__form-btn:focus {
-        color: $black;
-    }
-
+    .footer__form-btn:focus,
     .footer__form-btn:active {
-       color: $black;
+        color: $black;
     }
 
     .footer__desc {

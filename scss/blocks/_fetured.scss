@@ -49,6 +49,12 @@
     .fetured-items__item:hover .fetured-items__button {
         display: block;
     }
+
+    .fetured-items__button:hover,
+    .fetured-items__button:active,
+    .fetured-items__button:focus {
+        font-weight: bold;
+    }
     
     .fetured-items__wrp {
         position: relative;
@@ -88,7 +94,9 @@
         padding: 14px 38px 14px 38px;
     }
     
-    .fetured-items__btn:hover {     
+    .fetured-items__btn:hover,
+    .fetured-items__btn:active,
+    .fetured-items__btn:focus {     
         color: $white; 
         background-color: $dark-pink;  
     }

@@ -14,4 +14,10 @@
 
 .menu-item__sub-item {
     margin-bottom: 11px;
-}    
+} 
+
+.menu-item__sub-item:hover,
+.menu-item__sub-item:active,
+.menu-item__sub-item:focus {
+    font-weight: bold;
+}

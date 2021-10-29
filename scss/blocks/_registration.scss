@@ -72,15 +72,14 @@
         color: #B1B1B1;
     }
 
-    .registration__form-input:hover {
-        outline-color: $dark-pink;
-    }
-
+    .registration__form-input:hover,
     .registration__form-input:focus {
         outline-color: $dark-pink;
     }
 
-    .registration__form-btn:hover {
+    .registration__form-btn:hover,
+    .registration__form-btn:focus,
+    .registration__form-btn:active {
         opacity: 0.5;
     }
 
