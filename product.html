@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -63,146 +65,71 @@
         </nav>
     </header>
     <main>
-        <section class="brand">
-            <div class="brand__wrapper">
-                <img class="brand__img" src="./img/man.jpg" alt="man">
-                <div class="brand__wrp">
-                    <h1 class="brand__title">the brand <span class="brand__subtitle">of luxerious <span
-                                class="brand__subtitle-pink"> fashion</span></span></h1>
+        <section class="registration-title">
+            <div class="container registration-title__wrp">
+                <h1 class="registration-title__desc">new arrivals</h1>
+                <i class="far fa-address-book"></i>
+            </div>
+        </section>
+        <section>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/product-1.jpg" class="d-block w-25" alt="product-1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/product-2.jpg" class="d-block w-25" alt="product-2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/product-3.jpg" class="d-block w-25" alt="product-3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/product-4.jpg" class="d-block w-25" alt="product-4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/product-5.jpg" class="d-block w-25" alt="product-5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/product-6.jpg" class="d-block w-25" alt="product-6">
+                    </div>
                 </div>
-                <div class="brand__overlay" id="wrp"></div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+                    <img src="./img/prev.png" alt="">
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+                    <img src="./img/next.png" alt="">
+                    <span class="visually-hidden">Следующий</span>
+                </button>
             </div>
-        </section>
-        <section class="sales">
-            <div class="container">
-                <h2 class="sales__heading visually-hidden">Sales</h2>
-                <ul class="sales__list">
-                    <li class="sales__item sales__item-narrow sales-woman">
-                        <p class="sales__text">30% off</p>
-                        <h3 class="sales__item-title">for women</h3>
-                    </li>
-                    <li class="sales__item sales__item-narrow sales-man">
-                        <p class="sales__text">hot deal</p>
-                        <h3 class="sales__item-title">for men</h3>
-                    </li>
-                    <li class="sales__item sales__item-narrow sales-kid">
-                        <p class="sales__text">new arrivals</p>
-                        <h3 class="sales__item-title">for kids</h3>
-                    </li>
-                    <li class="sales__item sales__item-wide sales-acc">
-                        <p class="sales__text sales__text-wide">luxirous & trendy</p>
-                        <h3 class="sales__item-title">accesories</h3>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="fetured-items">
-            <div class="container">
-                <h2 class="fetured-items__heading">Fetured Items</h2>
-                <p class="fetured-items__text">Shop for items based on what we featured in this week</p>
 
-                <ul class="fetured-items__list">
-                    <li class="fetured-items__item">
-                        <div class="fetured-items__wrp">
-                            <img class="fetured-items__img" src="./img/product-1.jpg" alt="product-1">
-                            <button class="fetured-items__button" type="button">Add to Cart</button>
-                        </div>
-                        <h3 class="fetured-items__title">ellery x m'o capsule</h3>
-                        <p class="fetured-items__desc">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of cool Kym Ellery
-                            teams up with Moda Operandi.</p>
-                        <p class="fetured-items__features">$52.00</p>
-                    </li>
-                    <li class="fetured-items__item">
-                        <div class="fetured-items__wrp">
-                            <img class="fetured-items__img" src="./img/product-2.jpg" alt="product-2">
-                            <button class="fetured-items__button" type="button">Add to Cart</button>
-                        </div>
-                        <h3 class="fetured-items__title">ellery x m'o capsule</h3>
-                        <p class="fetured-items__desc">known for her sculptural takes on traditional tailoring,
-                            australian
-                            arbiter of cool kym ellery
-                            teams up with moda operandi.</p>
-                        <p class="fetured-items__features">$52.00</p>
-                    </li>
-                    <li class="fetured-items__item">
-                        <div class="fetured-items__wrp">
-                            <img class="fetured-items__img" src="./img/product-3.jpg" alt="product-3">
-                            <button class="fetured-items__button" type="button">Add to Cart</button>
-                        </div>
-                        <h3 class="fetured-items__title">ellery x m'o capsule</h3>
-                        <p class="fetured-items__desc">Known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of cool Kym Ellery
-                            teams up with Moda Operandi.</p>
-                        <p class="fetured-items__features">$52.00</p>
-                    </li>
-                    <li class="fetured-items__item">
-                        <div class="fetured-items__wrp">
-                            <img class="fetured-items__img" src="./img/product-4.jpg" alt="product-4">
-                            <button class="fetured-items__button" type="button">Add to Cart</button>
-                        </div>
-                        <h3 class="fetured-items__title">ellery x m'o capsule</h3>
-                        <p class="fetured-items__desc">known for her sculptural takes on traditional tailoring,
-                            australian
-                            arbiter of cool kym ellery
-                            teams up with moda operandi.</p>
-                        <p class="fetured-items__features">$52.00</p>
-                    </li>
-                    <li class="fetured-items__item">
-                        <div class="fetured-items__wrp">
-                            <img class="fetured-items__img" src="./img/product-5.jpg" alt="product-5">
-                            <button class="fetured-items__button" type="button">Add to Cart</button>
-                        </div>
-                        <h3 class="fetured-items__title">ellery x m'o capsule</h3>
-                        <p class="fetured-items__desc">known for her sculptural takes on traditional tailoring,
-                            australian
-                            arbiter of cool kym ellery
-                            teams up with moda operandi.</p>
-                        <p class="fetured-items__features">$52.00</p>
-                    </li>
-                    <li class="fetured-items__item">
-                        <div class="fetured-items__wrp">
-                            <img class="fetured-items__img" src="./img/product-6.jpg" alt="product-6">
-                            <button class="fetured-items__button" type="button">Add to Cart</button>
-                        </div>
-                        <h3 class="fetured-items__title">ellery x m'o capsule</h3>
-                        <p class="fetured-items__desc">known for her sculptural takes on traditional tailoring,
-                            Australian
-                            arbiter of cool Kym Ellery
-                            teams up with Moda Operandi.</p>
-                        <p class="fetured-items__features">$52.00</p>
-                    </li>
-                </ul>
-
-                <a class="fetured-items__btn" href="#">Browse All Product</a>
+            <div class="product__info container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam accusantium magnam vero inventore
+                    dolorem eum expedita doloribus nulla possimus aperiam fugit deleniti, nam, illo alias beatae non
+                    esse? Alias, numquam!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae nostrum maxime rem placeat
+                    illum modi iure dolorum veniam corrupti commodi porro, mollitia at nam autem sapiente recusandae
+                    laborum necessitatibus? Quaerat?</p>
             </div>
-        </section>
-        <section class="benefits">
-            <ul class="benefits__list">
-                <li class="benefits__item">
-                    <img class="benefits__img" src="./img/logo-footer-1.png" alt="logo-footer-1">
-                    <h2 class="benefits__heading">Free Delivery</h2>
-                    <p class="benefits__text">Worldwide delivery on all. Authorit tively morph next-generation innov
-                        tion with extensive
-                        models.</p>
-                </li>
-                <li class="benefits__item">
-                    <img class="benefits__img" src=" ./img/logo-footer-2.png" alt="logo-footer-2">
-                    <h2 class="benefits__heading">Sales & discounts</h2>
-                    <p class="benefits__text">Worldwide delivery on all. Authorit tively morph next-generation innov
-                        tion with extensive
-                        models.</p>
-                </li>
-                <li class="benefits__item">
-                    <img class="benefits__img" src=" ./img/logo-footer-3.png" alt="logo-footer-3">
-                    <h2 class="benefits__heading">Quality assurance</h2>
-                    <p class="benefits__text">Worldwide delivery on all. Authorit tively morph next-generation innov
-                        tion with extensive
-                        models.</p>
-                </li>
-            </ul>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <img src="./img/product-1.jpg" alt="product-1">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <img src="./img/product-3.jpg" alt="product-1">
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <img src="./img/product-6.jpg" alt="product-1">
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
     <footer class="footer">
@@ -210,15 +137,14 @@
             <div class="footer__data">
                 <div class="footer__info">
                     <img class="footer__img-women" src="./img/women-footer.png" alt="women-footer">
-                    <p class="footer__desc">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
-                        purus
+                    <p class="footer__desc">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
                         condimentum“</p>
                 </div>
                 <div class="footer__form-info">
                     <h2 class="footer__heading">subscribe</h2>
                     <p class="footer__subtitle">for our newletter and promotion</p>
                     <form class="footer__form" action="#">
-                        <label class="registration__form-label visually-hidden" for="input-email">Last Name</label>
+                        <label class="footer__form-label visually-hidden" for="input-email">Last Name</label>
                         <input type="email" class="footer__form-input" id="input-email" placeholder="Enter Your Email">
                         <button type="submit" class="footer__form-btn">Subscribe</button>
                     </form>
@@ -293,8 +219,8 @@
             </div>
         </section>
     </footer>
-
     <script src="js/script.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
 </body>
 
 </html>

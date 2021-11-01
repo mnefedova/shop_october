@@ -1,5 +1,4 @@
 .order {
-
     padding-top: 96px;
     padding-bottom: 128px;
 
@@ -20,6 +19,7 @@
         @include tablet {
             flex-direction: column;
             align-items: center;
+            justify-content: center;
         }
     }
 
@@ -30,50 +30,49 @@
     }
 
     .order_img {
-          
+        width: 100%;                 
+    }
+
+    .order_img-wrp {
+        max-width: 262px; 
+        flex-grow: 0.5;
+        width: 30%;           
     }
 
     .order_info {
-        padding-right: 90px;
         padding-top: 22px;
         padding-left: 31px;
+        max-width: 262px;
+
+        @include mobile {
+            padding-top: 13px;
+            padding-left: 17px;
+            max-width: 144px;            
+        }        
     }
 
     .order_header {
         @include font(24px, 29px, 400, $font-lato);
         text-transform: uppercase;
         margin-bottom: 42px;
+
+        @include mobile {
+            @include font(16px, 19px, 400, $font-lato);  
+            margin-bottom: 25px;  
+        }
     }
 
     .order_desc {
         @include font(22px, 26px, 400, $font-lato);  
-        color: #575757;     
+        color: #575757; 
+
+        @include mobile {
+            @include font(14px, 16px, 400, $font-lato);    
+        }            
     }
 
     .order_desc-colored {
         color: $pink;    
-    }
-
-    .order_form {
-        margin-left: 128px; 
-        display: flex;
-        flex-direction: column; 
-        
-        @include tablet {
-            margin-left: 0px; 
-            margin-top: 65px;
-            flex-direction: row;   
-        }
-
-        @include mobile {
-            margin-top: 50px; 
-            flex-direction: column;  
-        }        
-    }
-
-    .order_form-inputs {
-        display: flex;
-        flex-direction: column;        
     }
 
     .order_buttons {
@@ -84,25 +83,15 @@
         @include tablet {
             justify-content: space-around;   
         }
-    }
 
-    .order_btn {
-        height: 49px;
-        width: 234px;
-        text-transform: uppercase;
-        border: 1px solid #A4A4A4;
-        background-color: $white;
-        @include font(14px, 17px, 300, $font-lato);
-        color: #000000; 
-    }
-
-    .order_btn:hover {
-        opacity: 0.5;
+        @include mobile {
+            justify-content: center;   
+        }        
     }
 
     .order_link {
         height: 49px;
-        width: 234px;
+        max-width: 234px;
         text-transform: uppercase;
         border: 1px solid #A4A4A4;
         background-color: $white;
@@ -112,11 +101,69 @@
         padding-top: 15px;
         box-sizing: border-box;
         @include font(14px, 17px, 300, $font-lato); 
-        color: #000000;           
+        color: #000000; 
+        flex-grow: 1;   
+
+        @include mobile {
+            max-width: 174px;   
+        }        
     }
 
-    .order_link:hover {
+    .order_link:hover,
+    .order_link:focus,
+    .order_link:active {
         opacity: 0.5;
+    }
+
+    .order_btn {
+        height: 49px;
+        max-width: 234px;
+        text-transform: uppercase;
+        border: 1px solid #A4A4A4;
+        background-color: $white;
+        @include font(14px, 17px, 300, $font-lato);
+        color: #000000; 
+        flex-grow: 1; 
+        margin-right: 10px;
+
+        @include mobile {
+            max-width: 174px;   
+        }              
+    }
+
+    .order_btn:hover,
+    .order_btn:focus,
+    .order_btn:active {
+        opacity: 0.5;
+    }
+
+    .order_form {
+        margin-left: 128px; 
+        display: flex;
+        flex-direction: column; 
+        
+        @include tablet {
+            margin-left: 0px; 
+            margin-top: 65px;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+        }
+
+        @include mobile {
+            margin-left: 0px;
+            margin-top: 50px; 
+            flex-direction: column;  
+        }        
+    }
+
+    .order_form-inputs {
+        display: flex;
+        flex-direction: column; 
+        
+        @include tablet {
+            flex-grow: 1;
+        }              
     }
 
     .order_label {
@@ -127,15 +174,19 @@
 
     .order_input {
         margin-top: 20px; 
-        height: 45px;  
-        width: 360px; 
+        height: 45px;
+        width: 360px;    
         padding-left: 16px;
+
+        @include tablet {
+            max-width: 360px;
+        }
+        @include mobile {
+            width: 91%;
+        }        
     }
 
-    .order_input:hover {
-        outline-color: $dark-pink;
-    }
-
+    .order_input:hover,
     .order_input:focus {
         outline-color: $dark-pink;
     }
@@ -151,7 +202,9 @@
         @include font(11px, 13px, 300, $font-lato);
     }
 
-    .order_btn-quote:hover {
+    .order_btn-quote:hover,
+    .order_btn-quote:focus,
+    .order_btn-quote:active {
         opacity: 0.5;
     }
 
@@ -165,13 +218,28 @@
         align-items:flex-end;
         flex-direction: column;
 
+        position: relative;
+
         @include tablet {
-            margin-top: 20px;
+            margin-top: 40px; 
+            margin-left: 15px;      
+            flex-grow: 1;          
         }
 
         @include mobile {
-            margin-top: 57px;    
-        }
+            margin-top: 57px; 
+            margin-left: 0px;    
+        }    
+        
+        &::before {
+            height: 1px;
+            width: 275px;
+            background-color: $light-grey;
+            content: ''; 
+            position: absolute; 
+            align-self: center; 
+            top: 104px;      
+        }        
     }
 
     .order_text-total {
@@ -203,12 +271,9 @@
         align-self: center;
     }
 
-    .order_link-total:hover {
+    .order_link-total:hover,
+    .order_link-total:focus,
+    .order_link-total:active {
         opacity: 0.5;
     }
-
-/*    .order_line {
-        border: 1px solid #000;  
-        margin-bottom: 17px;  
-    }*/
 }
