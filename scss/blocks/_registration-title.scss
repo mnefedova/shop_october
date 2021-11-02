@@ -13,4 +13,14 @@
         @include font(24px, 29px, 400, $font-lato);
         text-transform: uppercase;   
     }    
+
+    .registration-title__text {
+        text-transform: uppercase;
+        @include font(14px, 17px, 700, $font-lato);
+        color: #636363;      
+    }
+
+    .registration-title__text-pink {
+        color: $pink;
+    }
 }
