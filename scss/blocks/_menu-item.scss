@@ -6,8 +6,6 @@
 }
 
 .menu-item__sub-list {
-    @include font(14px, 17px, 400, $font-lato);
-    color: $grey;
     margin-bottom: 20px;
     margin-left: 21px;
 }
@@ -20,4 +18,10 @@
 .menu-item__sub-item:active,
 .menu-item__sub-item:focus {
     font-weight: bold;
+}
+
+.menu-item__link {
+    text-decoration: none;
+    @include font(14px, 17px, 400, $font-lato);
+    color: $grey;    
 }

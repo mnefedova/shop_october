@@ -49,12 +49,6 @@
     .fetured-items__item:hover .fetured-items__button {
         display: block;
     }
-
-    .fetured-items__button:hover,
-    .fetured-items__button:active,
-    .fetured-items__button:focus {
-        font-weight: bold;
-    }
     
     .fetured-items__wrp {
         position: relative;
@@ -69,9 +63,17 @@
         @include font(14px, 17px, 400, $font-lato);
         color: $white;  
         background-color: transparent;  
-        display: none;   
+        display: none; 
+        transition: transform 300ms;
     }
-    
+
+    .fetured-items__button:hover,
+    .fetured-items__button:active,
+    .fetured-items__button:focus {
+        font-weight: bold;
+        transform: scale(1.05);
+    }
+
     .fetured-items__button::before {
         content: '';
         height: 24px;
@@ -99,6 +101,12 @@
     .fetured-items__btn:focus {     
         color: $white; 
         background-color: $dark-pink;  
+    }
+
+    .fetured-items__btn:hover {
+        animation: color 2s 3;
+        animation-direction: alternate;
+        animation-timing-function: linear;
     }
     
     .fetured-items__title {

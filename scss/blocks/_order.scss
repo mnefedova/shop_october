@@ -23,23 +23,23 @@
         }
     }
 
-    .order_item {
+    .order__item {
         display: flex; 
         box-shadow: 10px 5px 10px rgba(0,0,0,0.5);  
         margin-bottom: 40px;
     }
 
-    .order_img {
+    .order__img {
         width: 100%;                 
     }
 
-    .order_img-wrp {
+    .order__img-wrp {
         max-width: 262px; 
         flex-grow: 0.5;
         width: 30%;           
     }
 
-    .order_info {
+    .order__info {
         padding-top: 22px;
         padding-left: 31px;
         max-width: 262px;
@@ -51,7 +51,7 @@
         }        
     }
 
-    .order_header {
+    .order__header {
         @include font(24px, 29px, 400, $font-lato);
         text-transform: uppercase;
         margin-bottom: 42px;
@@ -62,7 +62,7 @@
         }
     }
 
-    .order_desc {
+    .order__desc {
         @include font(22px, 26px, 400, $font-lato);  
         color: #575757; 
 
@@ -71,11 +71,11 @@
         }            
     }
 
-    .order_desc-colored {
+    .order__desc-colored {
         color: $pink;    
     }
 
-    .order_buttons {
+    .order__buttons {
         display: flex;
         justify-content: space-between;
         margin-top: 72px; 
@@ -89,7 +89,7 @@
         }        
     }
 
-    .order_link {
+    .order__link {
         height: 49px;
         max-width: 234px;
         text-transform: uppercase;
@@ -103,19 +103,21 @@
         @include font(14px, 17px, 300, $font-lato); 
         color: #000000; 
         flex-grow: 1;   
+        transition: transform 300ms;
 
         @include mobile {
             max-width: 174px;   
         }        
     }
 
-    .order_link:hover,
-    .order_link:focus,
-    .order_link:active {
-        opacity: 0.5;
+    .order__link:hover,
+    .order__link:focus,
+    .order__link:active {
+        /*opacity: 0.5;*/
+        transform: scale(1.05);
     }
 
-    .order_btn {
+    .order__btn {
         height: 49px;
         max-width: 234px;
         text-transform: uppercase;
@@ -125,19 +127,21 @@
         color: #000000; 
         flex-grow: 1; 
         margin-right: 10px;
+        transition: transform 300ms;
 
         @include mobile {
             max-width: 174px;   
         }              
     }
 
-    .order_btn:hover,
-    .order_btn:focus,
-    .order_btn:active {
-        opacity: 0.5;
+    .order__btn:hover,
+    .order__btn:focus,
+    .order__btn:active {
+        /*opacity: 0.5;*/
+        transform: scale(1.05);
     }
 
-    .order_form {
+    .order__form {
         margin-left: 128px; 
         display: flex;
         flex-direction: column; 
@@ -157,7 +161,7 @@
         }        
     }
 
-    .order_form-inputs {
+    .order__form-inputs {
         display: flex;
         flex-direction: column; 
         
@@ -166,13 +170,13 @@
         }              
     }
 
-    .order_label {
+    .order__label {
         @include font(16px, 19px, 300, $font-lato);
         text-transform: uppercase; 
         color: $black;  
     }
 
-    .order_input {
+    .order__input {
         margin-top: 20px; 
         height: 45px;
         width: 360px;    
@@ -186,12 +190,12 @@
         }        
     }
 
-    .order_input:hover,
-    .order_input:focus {
+    .order__input:hover,
+    .order__input:focus {
         outline-color: $dark-pink;
     }
 
-    .order_btn-quote {
+    .order__btn-quote {
         margin-top: 24px;   
         width: 100px;
         height: 34px;
@@ -200,15 +204,16 @@
         background-color: $white;
         border: 1px solid $dark-grey;
         @include font(11px, 13px, 300, $font-lato);
+        transition: opacity 300ms;
     }
 
-    .order_btn-quote:hover,
-    .order_btn-quote:focus,
-    .order_btn-quote:active {
+    .order__btn-quote:hover,
+    .order__btn-quote:focus,
+    .order__btn-quote:active {
         opacity: 0.5;
     }
 
-    .order_total {
+    .order__total {
         margin-top: 57px;
         background: #F5F3F3;
         padding-top: 39px;
@@ -242,13 +247,13 @@
         }        
     }
 
-    .order_text-total {
+    .order__text-total {
         @include font(11px, 13px, 400, $font-lato);
         text-transform: uppercase;
         margin-right: 34px;       
     }
 
-    .order_desc-total {
+    .order__desc-total {
         @include font(16px, 19px, 300, $font-lato);
         text-transform: uppercase;
         margin-top: 12px;
@@ -256,7 +261,7 @@
         margin-right: 34px;                   
     }
 
-    .order_link-total {
+    .order__link-total {
         height: 50px;
         width: 273px;
         text-transform: uppercase;  
@@ -271,9 +276,11 @@
         align-self: center;
     }
 
-    .order_link-total:hover,
-    .order_link-total:focus,
-    .order_link-total:active {
-        opacity: 0.5;
+    .order__link-total:hover,
+    .order__link-total:focus,
+    .order__link-total:active {
+        /*opacity: 0.5;*/
+        -webkit-animation: shake-top 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        animation: shake-top 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both; 
     }
 }

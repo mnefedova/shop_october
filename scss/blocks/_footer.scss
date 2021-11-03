@@ -144,6 +144,14 @@
         fill: $black;
     }
 
+    .footer__img {
+        transition: fill 300ms;
+    }
+
+    .footer__img-path {
+        transition: fill 300ms;
+    }
+
     .footer__link:hover .footer__img{
         fill: $white;
     }
@@ -155,6 +163,7 @@
     .footer__link:focus .footer__img{
         fill: $white;
     }
+
     .footer__img-path {
         fill: $white;    
     }

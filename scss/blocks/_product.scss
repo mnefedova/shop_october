@@ -1,11 +1,103 @@
-.product__info {
-    height: 600px;
-    border: 1px solid $grey;
-    z-index: 100;
-    margin: 0 auto;
-    margin-top: -60px;
-    margin-bottom: 129px;  
-    position: relative; 
-    border: 1px solid #EAEAEA;
-    background-color: $white; 
+.product {
+    .product__info {
+        border: 1px solid $grey;
+        z-index: 100;
+        margin: 0 auto;
+        margin-top: -60px;
+        position: relative; 
+        border: 1px solid #EAEAEA;
+        background-color: $white; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 65px;
+        width: 1140px;
+      
+        @include tablet {
+            margin-top: 0px;  
+            width: 100%;  
+        }
+        
+        &::after {
+            height: 1px;
+            width: 641px;
+            background-color: $light-grey;
+            content: ''; 
+            position: absolute; 
+            top: 357px;   
+        } 
+        
+        &::before {
+            height: 3px;
+            width: 63px;
+            background-color: #EF5B70;
+            content: ''; 
+            position: absolute; 
+            top: 93px;   
+        }          
+    }
+    
+    .product__heading {
+        @include font(14px, 17px, 300, $font-lato);
+        color: $pink;
+        text-transform: uppercase;
+    }
+
+    .product__title {
+        @include font(18px, 22px, 300, $font-lato);
+        text-transform: uppercase;
+        color: #4D4D4D;
+        margin: 28px 0 48px 0;
+    }
+
+    .product__desc {
+        @include font(14px, 17px, 300, $font-lato);
+        color: #5E5E5E;
+        width: 555px;
+        text-align: center;    
+    }
+
+    .product__features {
+        @include font(24px, 29px, 300, $font-lato);  
+        color: #EF5B70; 
+        margin: 32px 0 130px 0;
+    }
+
+    .product__list-select {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .product__item-select {
+        margin: 0px 10px;
+    }
+
+    .product__button {
+        border: 1px solid $btn-pink; 
+        color: $dark-pink;  
+        text-align: center; 
+        vertical-align: middle;
+        margin: 50px 0 0 0;
+        text-decoration: none;
+        padding: 14px 38px 14px 38px;
+        background-color: $white;    
+            
+        &:hover,
+        &:active,
+        &:focus {     
+            color: $white; 
+            background-color: $dark-pink;
+            -webkit-animation: shake-top 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: shake-top 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;              
+        }        
+    }
+
+    .product__btn {
+        color: #6F6E6E;
+        background-color: $white;
+        border-color: $white;
+        @include font(14px, 17px, 400, $font-lato);
+        text-transform: uppercase;
+      }
+    
 }
