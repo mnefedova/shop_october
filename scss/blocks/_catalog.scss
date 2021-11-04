@@ -1,0 +1,203 @@
+.catalog {
+
+    padding: 51px 0 96px 0;
+    display: flex;
+    flex-direction: column;
+
+    .catalog__filter {
+        display: flex;
+        flex-direction: row;  
+        
+        @include tablet {
+            justify-content: space-between;
+        }
+    }
+
+    .catalog__filter-selection {
+        width: 360px;
+        margin: 0 30px 0 0;
+        position: relative;       
+    }
+
+    .catalog__filter-list {
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+    }
+
+    .catalog__filter-button {
+        color: $black;
+        text-transform: uppercase;
+        @include font(14px, 17px, 600, $font-lato); 
+        border: none;
+        background-color: $white;              
+    }
+
+    @include mobile {
+        .catalog__filter-button span {
+            display: none;
+        }  
+    }
+
+    .catalog__filter-button::after {
+        content: '';
+        height: 10px;
+        width: 15px;
+        background-image: url(../img/filter.svg);
+        position: absolute;
+        top: 0;
+        transform: translate(50%,30%);   
+    }
+
+    .catalog__filter-button-pink {
+        color: #EF5B70;           
+    }   
+
+    .catalog__filter-button-pink::after {
+        content: '';
+        height: 10px;
+        width: 15px;
+        background-image: url(../img/filter-pink.svg);
+        position: absolute;
+        top: 0;
+        transform: translate(50%,30%);   
+    }
+
+    .catalog__item-title {
+        color: #EF5B70;
+        text-transform: uppercase;
+        @include font(14px, 17px, 400, $font-lato);   
+        position: relative; 
+        margin-top: 32px;         
+    }
+
+    .catalog__item-title::before {
+        height: 37px;
+        width: 5px;
+        background-color: $dark-pink;
+        content: ''; 
+        position: absolute; 
+        left: -11px;  
+        top: -10px;
+    }    
+
+    .catalog__item-title::after {
+        height: 1px;
+        width: 327px;
+        background-color: #EBEBEB;
+        content: ''; 
+        position: absolute; 
+        left: 0px;  
+        top: 20px;
+    }    
+
+    .catalog__filter-item {
+        display: flex;
+        flex-direction: column; 
+        position: relative;      
+    }
+
+    .catalog__filter-btn {
+        border: none;
+        text-transform: uppercase;
+        background-color: $white;
+        @include font(14px, 17px, 400, $font-lato);  
+        color: $grey;
+        margin: 0 28px 0 0;
+
+        @include mobile {
+            @include font(12px, 14px, 400, $font-lato);   
+        }
+    }
+
+    .catalog__list {
+        position: absolute;
+        z-index: 1;
+        background-color: $white;
+        width: 100%;    
+        display: none; 
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);  
+        padding: 0px 0 28px 33px;
+        
+        @include mobile {
+            width:max-content;
+        }
+    }
+
+    .catalog__list-selection {
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        width: 80px;
+        position: absolute;
+        z-index: 1;
+        top: 20px;
+        background-color: $white;
+        display: none;
+        padding: 0 0 10px 10px;
+    }
+
+    .catalog__item-selection {
+        text-transform: uppercase;
+        @include font(14px, 16px, 400, $font-lato);
+        color: $grey; 
+        margin: 10px 0 0 0;   
+    }
+
+    .catalog__item-checkbox {
+        border: #EBEBEB;
+    }
+
+    .catalog__grid {
+        margin: 0;
+        padding: 65px 0 48px 0;
+    }
+
+    .catalog__grid-list {
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+
+        @include tablet {
+            grid-template-columns: repeat(2, 48%);    
+        }
+
+        @include mobile {
+            grid-template-columns: repeat(1, 100%);    
+        }        
+    } 
+    
+    .catalog__grid-item {
+        background: #F8F8F8;   
+    }
+
+    .catalog__grid-link {
+        text-decoration: none;
+        color: $black;
+    }
+
+    .catalog__btn-list {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #EBEBEB;
+        width: fit-content; 
+        height: 43px;  
+        align-items: center;
+        align-self: center;     
+    }
+
+    .catalog__btn {
+        @include font(16px, 19px, 300, $font-lato);
+        color: $light-grey;
+        border: none;
+        background-color: $white;
+    }
+
+    .catalog__btn-pink {
+        color: $pink;
+    }
+    
+    .cat-display-block {
+        display: block;
+    }
+}
